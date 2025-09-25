@@ -24510,6 +24510,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1294288610}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: allowedOp
+      value: ALTER
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: builderUI
       value: 
       objectReference: {fileID: 231499934}
