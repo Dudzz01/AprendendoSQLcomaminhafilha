@@ -59,7 +59,7 @@ public class DatabaseManager : MonoBehaviour
     {
         // Recria DB sempre que abrir o jogo (como você fazia):
         var dst = Path.Combine(Application.persistentDataPath, "gameData.db");
-        if (File.Exists(dst)) File.Delete(dst);
+        
 
         string dbFile = "gameData.db";
         string dbPath = DatabaseUtils.GetDatabasePath(dbFile);
