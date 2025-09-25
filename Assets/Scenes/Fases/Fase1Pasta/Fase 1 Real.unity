@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PiaSogra
       objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.132
@@ -912,6 +916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MesaCasaSogra
       objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -1344,6 +1352,10 @@ PrefabInstance:
     - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_Name
       value: VasoSogra
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3321,6 +3333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EspelhoSogra
       objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.86135435
@@ -4221,6 +4237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArmarioCozinhaCasaSogra
       objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.82
@@ -4292,8 +4312,16 @@ PrefabInstance:
         SQL corretos, de repente pode descobrir uma nova dica...'
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: closeDelaySeconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.size
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: autoCloseOnSuccess
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[0]
@@ -4382,6 +4410,10 @@ PrefabInstance:
     - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_Name
       value: CentroSalaCasaSogra
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7552,6 +7584,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GeladeiraCasaSogra
       objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.33
@@ -7784,6 +7820,10 @@ PrefabInstance:
     - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_Name
       value: FogaoCasaSogra
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8697,7 +8737,7 @@ MonoBehaviour:
   promptUIErro: {fileID: 702638271}
   botaoFecharErro: {fileID: 1461757430}
   textoErro: {fileID: 1144491555}
-  quantidadeDesafiosConcluidosRequisito: 3
+  quantidadeDesafiosConcluidosRequisito: 2
 --- !u!4 &1433284284
 Transform:
   m_ObjectHideFlags: 0
@@ -8724,6 +8764,10 @@ PrefabInstance:
     - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_Name
       value: ArmarioBanheiroSogra
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10362,7 +10406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1775321544
 Transform:
   m_ObjectHideFlags: 0
@@ -14240,6 +14284,10 @@ PrefabInstance:
     - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_Name
       value: EstanteCasaSogra
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24407,7 +24455,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_Name
-      value: PoltronaCasaSogra
+      value: Desafio 2
       objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24462,50 +24510,60 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1294288610}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: builderUI
+      value: 
+      objectReference: {fileID: 231499934}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: interactKey
       value: 306
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: movableName
-      value: Poltrona
+      value: Cor Favorita
       objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: enunciadoText
+      value: 
+      objectReference: {fileID: 231499935}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: interactRadius
       value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: textoEnunciado
-      value: 'Desafio: Encontre itens escondidos na poltrona da sala utilizando a
-        tabela Itens e filtrando pelo campo IdMovel! Para isso, utilize os comandos
-        SQL corretos, de repente pode descobrir uma nova dica...'
+      value: 'Desafio: Desafio 2 (so cumpre se fazer o desafio 1)'
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.size
-      value: 8
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: challengeIndexInSave
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[0]
-      value: =
+      value: ALTER
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[1]
-      value: Where
+      value: TABLE
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[2]
-      value: Select
+      value: BRINQUEDOS
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[3]
-      value: Itens
+      value: ADD COLUMN
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[4]
-      value: From
+      value: COR_FAVORITA
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[5]
-      value: '*'
+      value: TEXT
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[6]
@@ -24530,7 +24588,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2108716918}
+      addedObject: {fileID: 2108716919}
   m_SourcePrefab: {fileID: 100100000, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
 --- !u!4 &2108716916 stripped
 Transform:
@@ -24542,7 +24600,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
   m_PrefabInstance: {fileID: 2108716915}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2108716918
+--- !u!114 &2108716918 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+  m_PrefabInstance: {fileID: 2108716915}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108716917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a5e4ed7527d7547a7b507dd531ff91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2108716919
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24551,9 +24620,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2108716917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9db715cd07e4b2049a3b2e3616fc2a0f, type: 3}
+  m_Script: {fileID: 11500000, guid: af99765d6a221bc4fbefb423b8e0f01a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  furniture: {fileID: 2108716918}
 --- !u!1 &2113810460
 GameObject:
   m_ObjectHideFlags: 0
@@ -24698,7 +24768,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_Name
-      value: SofaCasaSogra
+      value: Desafio1
       objectReference: {fileID: 0}
     - target: {fileID: 2133168539160361845, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24753,58 +24823,120 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1294288610}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: builderUI
+      value: 
+      objectReference: {fileID: 231499934}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: interactKey
       value: 306
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: movableName
-      value: Sofa
+      value: Brinquedos
       objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: enunciadoText
+      value: 
+      objectReference: {fileID: 231499935}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: interactRadius
       value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: textoEnunciado
-      value: 'Desafio: Encontre itens escondidos no sofa da sala utilizando a tabela
-        Itens e filtrando pelo campo IdMovel! Para isso, utilize os comandos SQL
-        corretos, de repente pode descobrir uma nova dica...'
+      value: 'Desafio: Desafio 1'
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.size
-      value: 8
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: challengeIndexInSave
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[0]
-      value: IdMovel
+      value: CREATE
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[1]
-      value: =
+      value: TABLE
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[2]
-      value: Select
+      value: BRINQUEDOS
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[3]
-      value: From
+      value: (
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[4]
-      value: '*'
+      value: ID
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[5]
-      value: 5
+      value: NOME
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[6]
-      value: Itens
+      value: CATEGORIA
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: tokens.Array.data[7]
-      value: Where
+      value: COR
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[8]
+      value: MATERIAL
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[9]
+      value: IDADE_RECOMENDADA
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[10]
+      value: DATA_CADASTRO
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[11]
+      value: ATIVO
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[12]
+      value: INTEGER
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[13]
+      value: PRIMARY
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[14]
+      value: KEY
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[15]
+      value: ','
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[16]
+      value: TEXT
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[17]
+      value: NOT NULL
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[18]
+      value: DEFAULT
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[19]
+      value: CURRENT_DATE
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+      propertyPath: tokens.Array.data[20]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       propertyPath: allowedTables.Array.size
@@ -24821,7 +24953,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2122891773}
+      addedObject: {fileID: 2122891774}
   m_SourcePrefab: {fileID: 100100000, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
 --- !u!4 &2122891771 stripped
 Transform:
@@ -24833,7 +24965,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1285439307344869384, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
   m_PrefabInstance: {fileID: 2122891770}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2122891773
+--- !u!114 &2122891773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3092442423893661753, guid: cb73f189b2cba684aaec17d12a57cf8e, type: 3}
+  m_PrefabInstance: {fileID: 2122891770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122891772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a5e4ed7527d7547a7b507dd531ff91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2122891774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24842,9 +24985,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2122891772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ce3bb59a80c4224ba93229f41a03f25, type: 3}
+  m_Script: {fileID: 11500000, guid: de0ea70c643a8924a9a658b066679e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  furniture: {fileID: 2122891773}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

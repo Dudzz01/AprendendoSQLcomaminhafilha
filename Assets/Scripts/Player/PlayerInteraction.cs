@@ -10,34 +10,30 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] KeyCode interactKey = KeyCode.LeftControl;
 
     [Header("Referências de UI")]
-    [SerializeField] GameObject promptUI;           // painel que contém o texto
-    [SerializeField] TextMeshProUGUI promptText;    
-    [SerializeField] Button closeConsoleButton;     
+    [SerializeField] GameObject promptUI;            // painel que contém o texto
+    [SerializeField] TextMeshProUGUI promptText;     // texto do prompt
+    [SerializeField] Button closeConsoleButton;      // botão opcional para fechar o console
 
-    [Header("Modo Blocos")]
-    [SerializeField] private QueryBuilderUI queryBuilderUI;  
-
+    [Header("Modo Blocos (opcional)")]
+    [SerializeField] private QueryBuilderUI queryBuilderUI; // se usar builder, só setamos os tokens
 
     private FurnitureInteractable nearestFI;
-    private bool consoleOpen = false;                
+    private bool consoleOpen = false;
 
     void Start()
     {
         if (closeConsoleButton != null)
             closeConsoleButton.onClick.AddListener(CloseConsole);
+
+        if (promptUI != null) promptUI.SetActive(false);
     }
 
     void Update()
     {
-        
+        // Descobre o móvel mais próximo dentro do raio
         var all = FindObjectsOfType<FurnitureInteractable>();
-
-       
         var inRange = all
-            .Select(fi => new {
-                fi,
-                dist = Vector3.Distance(transform.position, fi.transform.position)
-            })
+            .Select(fi => new { fi, dist = Vector3.Distance(transform.position, fi.transform.position) })
             .Where(x => x.dist <= interactRadius)
             .OrderBy(x => x.dist)
             .FirstOrDefault();
@@ -46,58 +42,67 @@ public class PlayerInteraction : MonoBehaviour
         {
             nearestFI = inRange.fi;
 
-            
-            if (!consoleOpen)
+            // Mostra o prompt quando o console não está aberto
+            if (!consoleOpen && promptUI != null && promptText != null)
             {
                 promptUI.SetActive(true);
                 promptText.text = $"Pressione CTRL para acessar {nearestFI.movableName}";
             }
 
-
+            // Interagir
             if (Input.GetKeyDown(interactKey))
             {
-                
-                promptUI.SetActive(false);
+                if (promptUI != null) promptUI.SetActive(false);
                 consoleOpen = true;
-                Debug.Log(nearestFI.textoEnunciado);
 
-                
+                // Se usar builder de blocos, só atualiza o pool de tokens (sem abrir fluxo legado)
+                if (queryBuilderUI != null && nearestFI.tokens != null)
+                    queryBuilderUI.availableTokens = nearestFI.tokens;
 
-                
-               
-                queryBuilderUI.availableTokens = nearestFI.tokens;
-                
+                // Novo fluxo: deixa o próprio móvel abrir o console com sua sessão (AllowedOp/Validator/mensagem/etc.)
+                nearestFI.Interact();
 
-               
-                queryBuilderUI.Open(nearestFI.allowedTables, nearestFI.validator);
-                EnunciadoUIManager.I.Show(nearestFI.textoEnunciado);
+                // Se você ainda usa um gerenciador de enunciado externo, mantenha esta linha:
+                // (ignora se não existir)
+                try { EnunciadoUIManager.I?.Show(nearestFI.textoEnunciado); } catch { /* opcional */ }
             }
         }
         else
         {
             nearestFI = null;
-            promptUI.SetActive(false);
+            if (promptUI != null) promptUI.SetActive(false);
         }
 
-        
+        // ESC fecha o console
         if (Input.GetKeyDown(KeyCode.Escape) && consoleOpen)
             CloseConsole();
     }
 
     private void CloseConsole()
     {
-        queryBuilderUI.OnClose();
+        // Fecha o builder (se estiver aberto)
+        if (queryBuilderUI != null && queryBuilderUI.gameObject.activeSelf)
+            queryBuilderUI.OnClose();
+
+        // Fecha o console SQL da fase atual (via móvel mais próximo, se disponível)
+        if (nearestFI != null && nearestFI.sqlUI != null)
+            nearestFI.sqlUI.Close();
+
         consoleOpen = false;
 
+        // Reexibe o prompt se ainda estiver dentro do raio
         if (nearestFI != null &&
             Vector3.Distance(transform.position, nearestFI.transform.position) <= interactRadius)
         {
-            promptUI.SetActive(true);
-            promptText.text = $"Pressione CTRL para acessar {nearestFI.movableName}";
+            if (promptUI != null && promptText != null)
+            {
+                promptUI.SetActive(true);
+                promptText.text = $"Pressione CTRL para acessar {nearestFI.movableName}";
+            }
         }
         else
         {
-            promptUI.SetActive(false);
+            if (promptUI != null) promptUI.SetActive(false);
         }
     }
 

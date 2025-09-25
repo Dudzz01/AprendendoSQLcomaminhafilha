@@ -23,6 +23,23 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public static void MarkChallengeComplete(int index)
+    {
+        if (s == null || s.quantidadesDesafiosConcluidos == null) return;
+        if (index < 0 || index >= s.quantidadesDesafiosConcluidos.Length) return;
+
+        if (!s.quantidadesDesafiosConcluidos[index])
+        {
+            s.quantidadesDesafiosConcluidos[index] = true;
+            s.desafiosConcluidos++;
+
+            var ctrl = gmController != null ? gmController.GetComponent<GameController>()
+                                             : GameObject.FindObjectOfType<GameController>();
+            var saver = ctrl != null ? ctrl.GetComponent<SaveGame>() : null;
+            if (saver != null) saver.SaveGameOfScene(s);
+        }
+    }
+
     private void Update()
     {
 
